@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+.search-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box {
+  background-color: #ccc;
+  padding: 12px;
+  border-radius: 16px;
+  color: #000;
+}
+#input-search {
+  width: 280px;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+#input-search:focus {
+  border: none;
+  outline: none;
+}
+.weather-info {
+  /* margin: 0px auto; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* position: absolute;
+  top: 50%;
+  transform: translateY(-50%); */
+}
+.weather-box {
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #0b3b5b;
+  margin-top: 24px;
+  padding: 16px;
+}
+.sunrise-set {
+  display: flex;
+  justify-content: space-between;
+}
+#sunrise,
+#sunset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px;
+  background-color: #000;
+  border-radius: 16px;
+  margin: 16px 8px 0px 8px;
+  width: 300px;
+}
+.search-result {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.search-result ul {
+  text-decoration: none;
+  list-style: none;
+  border-top: 1px solid #999;
+  padding: 15px 10px;
+}
+.search-result ul li {
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 8px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.search-result ul li:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  gap: 16px;
+  margin: 8px 0px;
+}
+.icon-img {
+  height: 48px;
+  width: 48px;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+.lg-text {
+  font-size: 36px;
+  font-weight: 700;
+}
+.md-text {
+  font-size: 24px;
+  font-weight: 600;
+}
+.shadow {
+  box-shadow: 4px 3px 5px rgba(255, 255, 255, 0.3);
+}
+.pad-left {
+  padding-left: 16px;
+}
+.pad-right {
+  padding-right: 16px;
+}
+.pad-vertical {
+  padding: 16px 0px;
+}

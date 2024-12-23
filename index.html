@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <section class="search shadow">
+      <div class="search-nav-bar">
+        <img src="./img/weather.png" class="icon-img" alt="" />
+        <span class="lg-text pad-left">Weather app</span>
+      </div>
+      <div class="search-box">
+        <div>
+          <input type="text" id="input-search" placeholder="Search" />
+          <button onclick="searchByCity()">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="search-result"></div>
+      </div>
+    </section>
+    <section class="weather-info">
+      <div class="weather-box">
+        <div id="address" class="lg-text"></div>
+        <div id="date-time"></div>
+        <div id="weather-description" class="md-text pad-vertical"></div>
+        <div class="md-text grid">
+          Temperature<span id="temperature"></span>
+        </div>
+        <div class="md-text grid">Humidity <span id="humidity"></span></div>
+        <div class="md-text grid">Pressure <span id="pressure"></span></div>
+        <div class="md-text grid">Visibility <span id="visibility"></span></div>
+        <section class="sunrise-set">
+          <div id="sunrise" class="shadow">
+            <div id="sunrise-img">
+              <img src="./img/sunrise.png" class="icon-img" alt="" />
+            </div>
+            <div id="sunrise-text-title" class="lg-text">Sunrise</div>
+            <div id="sunrise-text" class="md-text"></div>
+          </div>
+          <div id="sunset" class="shadow">
+            <div id="sunset-img">
+              <img src="./img/sunset.png" class="icon-img" alt="" />
+            </div>
+            <div id="sunset-text-title" class="lg-text">Sunset</div>
+            <div id="sunset-text" class="md-text"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <h2 id="sunset"></h2>
+  </body>
+</html>
