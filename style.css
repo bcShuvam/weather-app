@@ -30,16 +30,19 @@ body {
   border: none;
   outline: none;
 }
+.address-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  padding: 8px;
+  border-radius: 16px;
+}
 .weather-info {
-  /* margin: 0px auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  /* position: absolute;
-  top: 50%;
-  transform: translateY(-50%); */
 }
 .weather-box {
   width: 720px;
@@ -48,9 +51,14 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 16px;
-  background-color: #0b3b5b;
+  background-color: #3b97d3;
   margin-top: 24px;
   padding: 16px;
+}
+.weather-podcast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .sunrise-set {
   display: flex;
@@ -123,4 +131,7 @@ button {
 }
 .pad-vertical {
   padding: 16px 0px;
+}
+.pad-top {
+  padding-top: 16px;
 }

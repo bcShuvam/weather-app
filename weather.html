@@ -32,14 +32,25 @@
     </section>
     <section class="weather-info">
       <div class="weather-box">
-        <div id="address" class="lg-text"></div>
-        <div id="date-time"></div>
-        <div id="weather-description" class="md-text pad-vertical"></div>
+        <div class="address-time">
+          <div id="address" class="lg-text"></div>
+          <div id="time" class="lg-text"></div>
+        </div>
+        <div id="date-time" class="md-text pad-top"></div>
+        <!-- <div id="weather-description" class="md-text pad-vertical"></div> -->
+        <div class="md-text grid weather-podcast">
+          <span id="weather-description"></span>
+          <img id="weather-icon" src="" alt="" />
+        </div>
         <div class="md-text grid">
           Temperature<span id="temperature"></span>
         </div>
         <div class="md-text grid">Humidity <span id="humidity"></span></div>
         <div class="md-text grid">Pressure <span id="pressure"></span></div>
+        <div class="md-text grid">Wind Speed <span id="wind-speed"></span></div>
+        <div class="md-text grid">
+          Wind Direction <span id="wind-direction"></span>
+        </div>
         <div class="md-text grid">Visibility <span id="visibility"></span></div>
         <section class="sunrise-set">
           <div id="sunrise" class="shadow">
